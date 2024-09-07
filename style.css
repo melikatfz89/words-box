@@ -1,0 +1,90 @@
+body{
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-image: url('images/business-board-clipart-cute-blue-decorative-paintings-powerpoint-background_6bb60cad9d__960_540.jpg');
+    /* background-repeat: no-repeat; */
+}
+.title{
+    background-color: rgb(253, 196, 196);
+    padding: 20px 28px;
+    border-radius: 10px;
+}
+.origin-box {
+    background-color: rgb(253, 219, 219);
+    height: 550px;
+    width: 75vw;
+    box-sizing: border-box;
+    font-size: 42px;
+    font-weight: 500;
+    border-radius: 10px;
+}
+
+tbody {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.button-col{
+    border: 1px solid solid;
+}
+
+.button-col {
+    border: none;
+    background-color: rgb(216, 158, 158);
+    width: 100px;
+    height: 45px;
+    border-radius: 5px;
+    
+}
+
+.form-control{
+    width: 100px;
+    height: 45px;
+    margin-right: 5px;
+}
+ .flying-letter{
+    width: 75px;
+    height: 75px;
+    animation: fly-letter 5s linear infinite;
+ }
+
+ @keyframes fly-letter{
+    0%{
+       transform: translate(0px, 0px);
+    }
+    10%{
+        transform: translate(30px, 30px);
+     }
+     20%{
+        transform: translate(50px, 80px);
+     }
+     30%{
+        transform: translate(80px, 50px);
+     }
+     40%{
+        transform: translate(30px, 20px);
+     }
+     50%{
+        transform: translate(10px, 10px);
+     }
+     60%{
+        transform: translate(-20px, 30px);
+     }
+     70%{
+        transform: translate(-50px, 50px);
+     }
+     80%{
+        transform: translate(-80px, 50px);
+     }
+     90%{
+        transform: translate(-100px, 50px);
+     }
+     100%{
+        transform: translate(-110px, 50px);
+     }
+ }
+   

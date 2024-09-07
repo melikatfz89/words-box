@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="JavaScript.js"></script>
+    <link href="../BootStarp/Content/bootstrap.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- <table class="table table-bordered table-hover table-striped text-center">
+        <tr>
+            <td class="">fisrtnumber</td>
+            <td class=""><input type="text" value="" id="first" name="first" /></td>
+        </tr>
+        <tr>
+            <td>secondnumber</td>
+            <td><input type="text" value="" id="second" name="second" /></td>
+        </tr>
+        <tr>
+            <td>add</td>
+            <td class=""><input type="button" class="btn-primary pr-5 pl-5 " value="Add" id="addThese" name="addThese" onclick="Add()" /></td>
+        </tr>
+    </table> -->
+    <img class="flying-letter" src="images/paper-airplane.png" alt="show pic">
+     <h1 class="title">write your letter:</h1>
+    <table class="table-bordered table-hover table-striped text-center col-12">
+        <tr>
+            <td class="button-col">
+                <input type="color" value="color" id="textcolor" name="changecolor" onchange="Changing()" class="form-control"/>
+            </td>
+            <td class="button-col">
+                <select id="drpFontsize" value="fontsize" name="" class="form-control" onchange="changeFontsize()">
+                    <option value="10px" name="">20px</option>
+                    <option value="20px" name="">25px</option>
+                    <option value="30px" name="">30px</option>
+                    <option value="32px" name="">35px</option>
+                    <option value="40px" name="">40px</option>
+                    <option value="42px" name="">45px</option>
+                </select>
+            </td>
+            <td class="button-col">
+                <button id="makebold" name="name" value="B" onclick="makeBold()" class="form-control">Bold</button>
+            </td>
+            <td class="button-col">
+                <button id="makeitalic" name="name" value="I" onclick="makeItalic()" class="form-control">Italic</button>
+            </td>
+            <td class="button-col">
+                <button id="makeunderline" name="name" value="U" onclick="makeUnderline()" class="form-control">Underline</button>
+            </td>
+            <td class="button-col">
+                <button id="makedleft" name="name" value="left" onclick="makeDirection()" class="form-control">text-direction</button>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="6">
+                <textarea  class="origin-box" id="textcontent" rows="80" cols="100" class="form-control" onselect="makeHighlight()">
+                </textarea>
+            </td>
+        </tr>
+    </table>
+    <script src="script.js"></script>
+</body>
+</html>
